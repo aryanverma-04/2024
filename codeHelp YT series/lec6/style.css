@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    color: rgb(9, 9, 9);
+    background-color: aquamarine;
+    display: block;
+}
+.container2{
+    color: rgb(255, 255, 255);
+    background-color: aquamarine;
+    display: inline;
+}
+.container2 p{
+    background-color: red;
+    display: inline;
+
+}
+
+.myList ul li a{
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+}
