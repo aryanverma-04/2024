@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    border: 2px solid white;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+}
+.content3{
+    border: 2px solid salmon;
+}
+
+.pre{
+
+}

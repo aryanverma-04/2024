@@ -1,4 +1,26 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'Grandiflora One', cursive;
+    background-color: rgba(0, 0, 0, 0.899);
+    font-style: italic;
+    line-height: 160%;
 }
+*{
+
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+.content{
+    color: rgb(255, 255, -0, 0.9);
+}
+#content1{
+    color: #00ffff89;
+}
+
+/* body{
+    list-style-type: none;
+} */

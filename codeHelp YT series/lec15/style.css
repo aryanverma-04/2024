@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.899);
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    background-color: blanchedalmond;
+    color: black;
+    border: 3px solid black;
+    padding: 10px;
+}
+p{
+    background-color: tomato;
+    color: black;
+    border: 3px solid black;
+
+}
+.content1 p {
+    border-radius: 10px 40px;
+    padding: 20px;
+}

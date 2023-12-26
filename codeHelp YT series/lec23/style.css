@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid brown;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.box{
+    width: 86vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#tile1{
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    position: relative;
+    animation: tile1;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: tomato;
+    align-self: center;
+    position: relative;
+    animation: circleMovement;
+    animation: 1s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+
+}
+#tile2{
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    position: relative;
+    animation: tile1;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes tile1 {
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 100%;
+    }
+}
+
+@keyframes circleMovement {
+    0% {
+     top: -40%;
+     left: 5%;
+    }
+    30% {
+     top: 5%;
+     left: 10%;
+    }
+
+    60% {
+     top:20%;
+     left: 10%;
+    }
+    100%{
+     top: 45%;
+     left: 10%;
+    }
+}

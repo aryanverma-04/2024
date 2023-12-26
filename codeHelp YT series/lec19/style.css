@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+    margin: 0px;
+    padding: 0px;
+}
+.container img{
+    margin: 2px;
+    float: rights;
+    height: 800px;
+    width: 500px;
+}
+#img1{
+    border: 5px solid salmon;
+}
+#img2{
+    border: 5px solid salmon;
+}
+#img3{
+    border: 5px solid salmon;
+}
+#img4{
+    border: 5px solid salmon;
+}
+
+.container p{
+    height: 500px;
+    width: 500px;
+    border: 2px solid salmon;
+    overflow: auto;
+}
