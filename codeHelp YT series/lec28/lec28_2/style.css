@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid salmon;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.4rem;
+    padding: 10px;
+    justify-items: stretch;
+}
+.item{
+    /* height: 100px;
+    width: 100px; */
+    border: 2px solid darkcyan;
+    background-color: yellowgreen;
+    color: black;
+    /* justify-self: stretch; */
+    /* align-self: flex-end; */
+    /* place-self: center; */
+
+
+}

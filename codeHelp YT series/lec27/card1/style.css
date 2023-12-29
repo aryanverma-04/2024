@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+.container{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: green;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.firstBox{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image img{
+    width: 70px;
+    border: 2px solid white;
+}
+.textBox{
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.799);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.textBox h1{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+.textBox h3{
+    font-size: 0.7rem;
+    font-style: normal;
+    text-align: left;
+}
+.imgBox{
+    width: 80%;
+    margin: auto;
+    background-color: #0093E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.imgBox .imgPlayer img{
+    width: 140px;
+}
+.imgBox .imgStar img{
+    width: 140px;
+}
+.infoTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mainTAble{
+    background-color: rgba(255, 255, 255, 0.721);
+    color: black;
+}
+.textArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+.heading{
+    background-color: rgba(0, 0, 0, 0.316);
+    border: 1px solid white;
+}
+.heading h1{
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.heading p{
+    font-size: 0.7rem;
+    text-align: justify;
+    padding: 3px;
+}
