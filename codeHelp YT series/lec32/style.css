@@ -1,10 +1,192 @@
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
 body{
-    background-color: black;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.899);
+    width: 100vw;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0.1rem;
 }
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.main-content{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-icon{
+    width: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-text{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham-items{
+    display: flex;
+    gap: 10px;
+}
+.ham-items a{
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: color 0.1s;
+    text-decoration: none;
+}
+.ham-items a:hover{
+    color: var(--link-color);
+    transition-duration: 0.2s;
+}
+
+
+.contact-button{
+    background-color: var(--primary-color);
+    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 18px;
+    border-radius: 0.375rem;
+}
+.contact-button:hover{
+    background-color: var(--link-color);
+}
+.ham-box{
+    display: none;
+}
+.hamburger-checkbox {
+    display: none;
+}
+
+.ham-box label {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+/* Adjust the styles for the hamburger menu items */
+.ham-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.ham-items a {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s;
+}
+
+.ham-items a:hover {
+    color: var(--link-color);
+}
+
+/* Adjust the styles for displaying the menu on checkbox check */
+.hamburger-checkbox:checked + .ham-box .ham-items {
+    display: flex;
+}
+
+/* media queries here */
+@media screen and (max-width:768px) {
+    .ham-items{
+        display: none;
+        gap: 10px;
+    }
+    .contact-button{
+        display: none;
+    }
+    .ham-box{
+        display: inline;
+    }
+    .ham-box input{
+        display: none;
+    }
+    .ham-box label{
+        font-size: 30px;
+    }
+    .ham-items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    .nav label { 
+        display: inline-block; 
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+      /* (C) TOGGLE SHOW/HIDE MENU */
+    .ham-items { display: none; }
+    .ham-box input:checked ~ .ham-items { display: inline; }
+    
+    .ham-items {
+        display: none;
+        gap: 10px;
+    }
+
+    .ham-box input {
+        display: none;
+    }
+
+    .ham-box label {
+        font-size: 30px;
+    }
+
+    .ham-items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    .ham-box input:checked + .ham-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
 }
