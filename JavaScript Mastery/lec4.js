@@ -16,6 +16,17 @@ let person1 = {
     "state": "HP", 
     "contry": "India"
 }
+console.log(person1)
 console.log(person1["name"])
 
 console.log(typeof "name")
+const person11 = {
+    "name": "aryan", 
+    "age": 19,
+    "state": "HP", 
+    "contry": "India"
+}
+console.log(person11)
+console.log(person11["name"])
+
+// console.log(typeof "name")
