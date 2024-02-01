@@ -36,8 +36,8 @@ def display_image_scikit(img):
 
 if __name__ == "__main__":
     # Example usage
-    file_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\image.jpg"
-    output_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\output_image2.jpg"
+    file_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\image_input.jpg"
+    output_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\output_image.jpg"
 
 
     # PIL (Pillow)
