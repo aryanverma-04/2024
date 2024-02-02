@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    margin-top: 40px;
+    gap: 3rem;
+}
