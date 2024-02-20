@@ -1,3 +1,4 @@
+
 // let a = document.getElementsByTagName('div')[0]
 // // console.log(a)
 // a.style.backgroundColor = "red"
@@ -14,8 +15,8 @@
 // a.after(newElem)
 // a.replaceWith(newElem)
 
-let node = document.getElementById("first-container")
-console.log(node)
+// let node = document.getElementById("first-container")
+// console.log(node)
 
 // node.insertAdjacentHTML("beforebegin", "<br> <b>Hello, BeforeBegin</b>")
 // node.insertAdjacentHTML("beforeend", "<br> <b>Hello, beforeend</b>")
@@ -23,4 +24,18 @@ console.log(node)
 // node.insertAdjacentHTML("afterend", "<br> <b>Hello, afterend</b>")
 
 // node.insertAdjacentText("beforebegin", "Adjacent Text")
-node.remove()
+// node.remove()
+
+let a = document.getElementById('first-container')
+console.log(a.classList)
+a.classList.add("effects")
+console.log(a.classList)
+
+// a.classList.remove("effects")
+a.classList.toggle("effects")
+
+// let a = document.getElementById('first-container');
+// console.log(a.classList);
+// let effects = "effects"; // Define effects as a string containing the class name
+// a.classList.add(effects);
+// console.log(a.classList);

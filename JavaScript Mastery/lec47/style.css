@@ -8,10 +8,3 @@ body{
     margin: 0px;
     box-sizing: border-box;
 }
-
-.effects{
-    background-color: aquamarine;
-    color: black;
-    border: 2px solid white;
-    margin: auto auto;
-}
