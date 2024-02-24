@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container {
+    background-image: url("./bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: blur(10px); */
+    
+    
+}
+.text-box{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.164); /* Adjust the alpha value (0.5) for the desired level of transparency */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 60vw;
+    height: 20vh;
+}
+#content{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .text-box{
+        height: 30vh;
+        width: 80%;
+    }
+    #content{
+        font-size: 3rem;
+        word-wrap: break-word;
+        text-align: center;
+    }
+}

@@ -9,7 +9,7 @@ def threshold_image(input_path, output_path_template, threshold_values):
         # Apply thresholding with three different values 
         thresholded_images = [cv2.threshold(img, threshold, 255, cv2.THRESH_BINARY)[1] for threshold in threshold_values] 
 
-        # Display and save the thresholded images 
+        # Display and save the thresholded images   
         for i, thresholded_img in enumerate(thresholded_images): 
             cv2.imshow(f"Threshold {i+1}", thresholded_img) 
             cv2.imwrite(output_path_template.format(i+1), thresholded_img) 
