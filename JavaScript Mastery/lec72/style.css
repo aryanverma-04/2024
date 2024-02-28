@@ -1,0 +1,48 @@
+body{
+    color: white;
+    
+}
+.container{
+    background-image: url("./bg.gif");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.terminal{
+    width: 80%;
+    height: 80%;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(14, 240, 14);
+    color:rgb(14, 240, 14);
+    padding: 2rem;
+}
+.terminal input{
+    color: rgb(14, 240, 14);
+    background-color: black;
+    border: 1px solid rgb(14, 240, 14);
+    font-size: 1.5rem;
+}
+#submit-button{
+    cursor: pointer;
+    outline: 0;
+    color: black;
+    background-color: rgb(14, 240, 14);
+    border-color: rgb(10, 102, 10);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+}

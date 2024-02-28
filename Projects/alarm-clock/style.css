@@ -1,0 +1,56 @@
+body{
+    color: black;
+    background-color: #E3FDFD;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav img{
+    height: 6vh;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+nav{
+    height: 8vh;
+    background: #A6E3E9;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 3rem;
+}
+.nightmode-button {
+    border: none; /* Add this line to remove the border */
+    background: #A6E3E9;
+}
+.summary{
+    text-align: center;
+    font-size: 2rem;
+}
+@font-face {
+    font-family: 'DS-Digital';
+    src: url(./DS-DIGI.TTF);
+}
+#time{
+    color: black;
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'DS-Digital';
+    
+}
+#date{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'DS-Digital';
+}   
+.time-display-container{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 60%  ;
+    margin: auto;
+}
