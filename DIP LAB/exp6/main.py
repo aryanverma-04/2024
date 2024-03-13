@@ -1,5 +1,4 @@
 import cv2
-
 def crop_image(input_path, output_path, x, y, width, height):
     try:
         # Read the input image
@@ -60,10 +59,10 @@ if __name__ == "__main__":
     # Example usage
 
     input_path = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\input_image.jpg"
-    output_path_cropped = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\cropped_image.jpg"
-    output_path_resized = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\resized_image.jpg"
-    output_path_scaled = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\scaled_image.jpg"
-    output_path_flipped = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\flipped_image.jpg"
+    output_path_cropped = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\cropped_image.jpg"
+    output_path_resized = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\resized_image.jpg"
+    output_path_scaled = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\scaled_image.jpg"
+    output_path_flipped = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp6\\flipped_image.jpg"
     
     # Crop the image
     crop_image(input_path, output_path_cropped, x=50, y=50, width=300, height=200)

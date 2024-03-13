@@ -36,21 +36,23 @@ def display_image_scikit(img):
 
 if __name__ == "__main__":
     # Example usage
-    file_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\image_input.jpg"
-    output_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\output_image.jpg"
+    file_path = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp1\\image_input.jpg"
+    output_path_pil = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp1\\output_path_pil.jpg"
+    output_path_matplotlib = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp1\\output_path_matplotlib.jpg"
+    output_path_scikit = "C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp1\\output_path_scikit.jpg"
 
 
     # PIL (Pillow)
     img_pil = read_image_pil(file_path)
-    save_image_pil(img_pil, output_path)
+    save_image_pil(img_pil, output_path_pil)
     display_image_pil(img_pil)
 
     # Matplotlib
     img_matplotlib = read_image_matplotlib(file_path)
-    save_image_matplotlib(img_matplotlib, output_path)
+    save_image_matplotlib(img_matplotlib, output_path_matplotlib)
     display_image_matplotlib(img_matplotlib)
 
     # Scikit Image
     img_scikit = read_image_scikit(file_path)
-    save_image_scikit(img_scikit, output_path)
+    save_image_scikit(img_scikit, output_path_scikit)
     display_image_scikit(img_scikit)

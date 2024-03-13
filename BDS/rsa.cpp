@@ -1,103 +1,53 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<math.h>
 using namespace std;
-set<int> prime; 
-int public_key;
-int private_key;
-int n;
-void primefiller()
-{
-	vector<bool> seive(250, true);
-	seive[0] = false;
-	seive[1] = false;
-	for (int i = 2; i < 250; i++) {
-		for (int j = i * 2; j < 250; j += i) {
-			seive[j] = false;
-		}
-	} 
-	for (int i = 0; i < seive.size(); i++) {
-		if (seive[i])
-			prime.insert(i);
-	}
+// find gcd
+int gcd(int a, int b) {
+   int t;
+   while(1) {
+      t= a%b;
+      if(t==0)
+      return b;
+      a = b;
+      b= t;
+   }
 }
-int pickrandomprime()
-{
-	int k = rand() % prime.size();
-	auto it = prime.begin();
-	while (k--)
-		it++;
-	int ret = *it;
-	prime.erase(it);
-	return ret;
-}
-void setkeys()
-{
-	int prime1 = pickrandomprime();
-	int prime2 = pickrandomprime(); 
-	n = prime1 * prime2;
-	int fi = (prime1 - 1) * (prime2 - 1);
-	int e = 2;
-	while (1) {
-		if (__gcd(e, fi) == 1)
-			break;
-		e++;
-	} 
-	public_key = e;
-	int d = 2;
-	while (1) {
-		if ((d * e) % fi == 1)
-			break;
-		d++;
-	}
-	private_key = d;
-}
-long long int encrypt(double message)
-{
-	int e = public_key;
-	long long int encrpyted_text = 1;
-	while (e--) {
-		encrpyted_text *= message;
-		encrpyted_text %= n;
-	}
-	return encrpyted_text;
-}
-long long int decrypt(int encrpyted_text)
-{
-	int d = private_key;
-	long long int decrypted = 1;
-	while (d--) {
-		decrypted *= encrpyted_text;
-		decrypted %= n;
-	}
-	return decrypted;
-}
-vector<int> encoder(string message)
-{
-	vector<int> form;
-	for (auto& letter : message)
-		form.push_back(encrypt((int)letter));
-	return form;
-}
-string decoder(vector<int> encoded)
-{
-	string s;
-	for (auto& num : encoded)
-		s += decrypt(num);
-	return s;
-}
-int main()
-{
-	primefiller();
-	setkeys();
-	string message ;
-	cout<<"Enter the message to encrypt: ";
-	getline(cin , message);
-	vector<int> coded = encoder(message);
-	cout << "Initial message:"<< endl << message<<endl;
-	cout << "encrypted message :"<<endl;
-	for (auto& p : coded)
-		cout << p;
-	cout<<endl;
-	cout << "decrypted message :"<<endl;
-	cout << decoder(coded) << endl;
-	return 0;
+int main() {
+   //2 random prime numbers
+   double p = 13;
+   double q = 11;
+   double n=p*q;//calculate n
+   double track;
+   double phi= (p-1)*(q-1);//calculate phi
+   //public key
+   //e stands for encrypt
+   double e=7;
+   //for checking that 1 < e < phi(n) and gcd(e, phi(n)) = 1; i.e., e and phi(n) are coprime.
+   while(e<phi) {
+      track = gcd(e,phi);
+      if(track==1)
+         break;
+      elseg
+         e++;
+   }
+   //private key
+   //d stands for decrypt
+   //choosing d such that it satisfies d*e = 1 mod phi
+   double d1=1/e;
+   double d=fmod(d1,phi);
+   double message = 9;
+   double c = pow(message,e); //encrypt the message
+   double m = pow(c,d);
+   c=fmod(c,n);
+   m=fmod(m,n);
+   cout<<"Original Message = "<<message;
+   cout<<"\n"<<"p = "<<p;
+   cout<<"\n"<<"q = "<<q;
+   cout<<"\n"<<"n = pq = "<<n;
+   cout<<"\n"<<"phi = "<<phi;
+   cout<<"\n"<<"e = "<<e;
+   cout<<"\n"<<"d = "<<d;
+   cout<<"\n"<<"Encrypted message = "<<c;
+   cout<<"\n"<<"Decrypted message = "<<m;
+   return 0;
 }

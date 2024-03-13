@@ -13,7 +13,7 @@ def convert_image(input_path, output_path, output_format):
 if __name__ == "__main__":
     # Example usage
     input_path = r"C:\Users\aryan verma\Documents\aryanverma_04\DIP LAB\exp2\image.jpg"
-    output_path = r"C:\Users\aryan verma\Documents\aryanverma_04\DIP LAB\exp2\image.png"  # Changed output format to PNG
+    output_path = r"C:\Users\aryan verma\Documents\aryanverma_04\DIP LAB\exp2\output.png"  # Changed output format to PNG
     output_format = "PNG"
 
     convert_image(input_path, output_path, output_format)
