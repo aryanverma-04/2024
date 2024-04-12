@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyWeather</title>
+    <link rel="icon" type="image/x-icon" href="./icon.svg" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="./icon.svg" alt="icon">
+            <h1>EasyWeather</h1>
+        </div>
+        <div id="desc">Effortless weather updates, always at your fingertips with EasyWeather.</div>
+    </header>
+    <div class="card">
+        <div class="search-box">
+            <div class="search-bar"  >
+                <input type="text" id = "myInput" placeholder="Enter City Name?">
+            </div>
+            <div class="search-button" id = "search-button">
+                <button><img src="./search.svg" alt="search"></button>
+            </div>
+        </div>
+        <div class="weather-info-box">
+            <div class="weather-icon">
+                <div class="weather-icon-image"><img src="./sun.svg" alt="icon"></div>
+                <div class="weather-text">Sunny </div>
+            </div>
+            <div class="info-box">
+                <div class="humidity-box">
+                    <div class="humidity-icon">
+                        <img src="./humidity.svg" alt="humidity">
+                        <div id="humidity-info">Humdity <br>100%</div>
+                    </div>
+                </div>
+                <div class="humidity-box">
+                    <div class="humidity-icon">
+                        <img src="./wind.svg" alt="wind">
+                        <div id="wind-info">Wind Speed <br>1000 km/h</div>
+                    </div>
+                </div>
+            </div>
+            <div class="default-info"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -4,7 +4,8 @@ def crop_image(input_path, output_path, x, y, width, height):
         # Read the input image
         img = cv2.imread(input_path)
         # Crop the image
-        cropped_img = img[y:y+height, x:x+width]
+        cropped_img = img[y:y+height, 
+                          x:x+width]
         # Display and save the cropped image
         cv2.imshow("Cropped Image", cropped_img)
         cv2.imwrite(output_path, cropped_img)

@@ -28,5 +28,3 @@ try:
 except ValueError as e:
     print("got caught in except block")
     print(f"Error: {e}")
-finally:
-    print("In finally block")
