@@ -25,9 +25,13 @@ def show_image_attributes(input_path):
         # Get image attributes
         height, width, channels = img.shape
         
+        # Calculate total number of pixels
+        total_pixels = height * width
+        
         # Display image attributes
         print(f"Image Dimensions: {width} x {height}")
         print(f"Number of Channels: {channels}")
+        print(f"Total Number of Pixels: {total_pixels}")
     except Exception as e:
         print(f"Error: {e}")
 

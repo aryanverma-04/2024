@@ -30,7 +30,7 @@ def main():
         if input_image is None:
             raise FileNotFoundError("Image not found or could not be read")
 
-        # Add Gaussian noise to the image
+        # Add Gaussian noise to the image   
         noisy_image = add_gaussian_noise(input_image)
 
         # Apply different filters

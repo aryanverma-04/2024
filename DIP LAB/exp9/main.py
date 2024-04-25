@@ -53,7 +53,7 @@ def apply_morphological_operations(input_path, output_path_prefix):
 if __name__ == "__main__":
     # Example usage
     input_path = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp9\\input_image.jpg"
-    output_path_prefix = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp9\\input_image.jpg"
+    output_path_prefix = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp9\\output"
     
     # Apply morphological operations
     apply_morphological_operations(input_path, output_path_prefix)

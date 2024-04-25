@@ -1,3 +1,5 @@
+# AIM: POS Tagging: Hidden Markov Model : Implement a POS tagging system using the Hidden Markov Model (HMM) on a sample text.
+
 # Import the spaCy library
 import spacy
 

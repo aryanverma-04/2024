@@ -32,7 +32,7 @@ if __name__ == "__main__":
     # Example usage
     input_path = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp8\\input_image.jpg"
     output_path = r"C:\\Users\\aryan verma\\Documents\\aryanverma_04\\DIP LAB\\exp8\\output_image.jpg"
-    kernel_size = 5  # Adjust the kernel size as needed
+    kernel_size = 100  # Adjust the kernel size as needed
     
     # Apply averaging filter
     apply_averaging_filter(input_path, output_path, kernel_size)

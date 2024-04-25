@@ -1,3 +1,5 @@
+// Symmetric Encryption
+
 #include <iostream>
 #include <cstring>
 
@@ -46,8 +48,8 @@ string vigenereDecrypt(const string& ciphertext, const string& key) {
 }
 
 int main() {
-    string plaintext = "moon landing";
-    string key = "SUN";
+    string plaintext = "MICHIGAN TECHNOLOGICAL UNIVERSITY";
+    string key = "HOUGHTON";
 
     // Encrypt the plaintext
     string ciphertext = vigenereEncrypt(plaintext, key);

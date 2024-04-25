@@ -44,31 +44,31 @@ int pickrandomprime()
     prime.erase(it);
     return ret;
 }
-void setkeys()
-{
-    int prime1 = pickrandomprime(); // first prime number
-    int prime2 = pickrandomprime(); // second prime number
-    // to check the prime numbers selected
-    // cout<<prime1<<" "<<prime2<<endl;
-    n = prime1 * prime2;
-    int fi = (prime1 - 1) * (prime2 - 1);
-    int e = 2;
-    while (1)
+    void setkeys()
     {
-        if (__gcd(e, fi) == 1)
-            break;
-        e++;
-    } // d = (k*Φ(n) + 1) / e for some integer k
-    public_key = e;
-    int d = 2;
-    while (1)
-    {
-        if ((d * e) % fi == 1)
-            break;
-        d++;
+        int prime1 = pickrandomprime(); // first prime number
+        int prime2 = pickrandomprime(); // second prime number
+        // to check the prime numbers selected
+        // cout<<prime1<<" "<<prime2<<endl;
+        n = prime1 * prime2;
+        int fi = (prime1 - 1) * (prime2 - 1);
+        int e = 2;
+        while (1)
+        {
+            if (__gcd(e, fi) == 1)
+                break;
+            e++;
+        } // d = (k*Φ(n) + 1) / e for some integer k
+        public_key = e;
+        int d = 2;
+        while (1)
+        {
+            if ((d * e) % fi == 1)
+                break;
+            d++;
+        }
+        private_key = d;
     }
-    private_key = d;
-}
 // to encrypt the given number
 long long int encrypt(double message)
 {

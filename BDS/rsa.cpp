@@ -27,7 +27,7 @@ int main() {
       track = gcd(e,phi);
       if(track==1)
          break;
-      elseg
+      else
          e++;
    }
    //private key

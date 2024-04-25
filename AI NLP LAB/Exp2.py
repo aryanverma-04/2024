@@ -1,3 +1,5 @@
+# Word Generation: Develop a program to generate random words based on specified criteria (e.g., length, starting letter).
+
 import random
 import string
 def generate_random_word(length, start_letter=None):
@@ -21,7 +23,7 @@ def generate_random_word(length, start_letter=None):
 try:
     word_length = int(input("Enter the desired word length: "))
     start_char = input("Enter the desired starting letter (or press Enter for a random starting letter): ")
-
+ 
     random_word = generate_random_word(word_length, start_char)
     print(f"Random word: {random_word}")
 

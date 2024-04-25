@@ -1,3 +1,5 @@
+# Morphology: Explore and analyze the morphological structure of words in a given text, focusing on prefixes, suffixes, and roots.
+
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -9,10 +11,10 @@ nltk.download('stopwords')
 def extract_morphology(text):
     # Tokenize the text into words and convert them to lowercase
     words = word_tokenize(text.lower())
-
+    # print(words)
     # Remove stopwords and punctuation
     stop_words = set(stopwords.words('english'))
-    
+    # print(stop_words)
     cleaned_words = []
 
     for word in words:

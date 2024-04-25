@@ -22,6 +22,6 @@ if __name__ == "__main__":
     input_path = r"C:\Users\aryan verma\Documents\aryanverma_04\DIP LAB\exp3\Exp3.txt"
     print(f"Input file path: {input_path}")  # Add this line for debugging
     output_path = r"C:\Users\aryan verma\Documents\aryanverma_04\DIP LAB\exp3\Exp3_converted.txt"
-    replacement_char = '-'
+    replacement_char = ' (*_*) '
 
     convert_spaces(input_path, output_path, replacement_char)
