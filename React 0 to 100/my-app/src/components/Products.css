@@ -1,0 +1,11 @@
+.flexing {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    justify-content: space-between; /* Adjust as needed */
+    width: 80%; /* Set width to 80% of the parent container */
+    flex-direction: row; /* Ensure items are laid out horizontally */
+    height: 20%;
+    font-size: 0.7rem;
+    margin: 0 auto;
+}
+
