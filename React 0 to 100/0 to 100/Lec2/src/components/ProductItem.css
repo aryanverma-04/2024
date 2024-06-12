@@ -1,0 +1,21 @@
+/* ProductItem.css */
+.margin {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background: blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.heading-bg-change{
+    background: black;
+    height: 90%;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: center; /* Align items horizontally center */
+    border-radius: 10px;
+}

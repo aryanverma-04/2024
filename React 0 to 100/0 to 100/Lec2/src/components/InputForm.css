@@ -1,0 +1,15 @@
+.input-form-css{
+    color: blue;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+.input-button{
+    color: black;
+    background: #40ff00;
+    font-size: 2rem;
+    margin-top: 10px;
+}
