@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+body {
+  background-color: #434a51;
+  font-family: Arial, sans-serif;
+}
+
+.section-home {
+  background-image: url("./Assets/background-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #c4cfde;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #c4cfde;
+}
+
+.navbar-logo {
+  width: 80px;
+}
+
+.navbar-title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-size: 16px;
+}
+
+.navbar-menu li a {
+  color: #c4cfde;
+}
+
+.main-content {
+  text-align: left;
+  width: 88%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.main-heading {
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.main-subheading {
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.btn-contact {
+  background: white;
+  color: red;
+  font-size: 16px;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.section-services {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.services-heading {
+  color: green;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.services-subheading {
+  color: #c4cfde;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  gap: 10px;
+}
+
+.card-icon {
+  width: 50px;
+}
+
+.card-title {
+  width: 80%;
+}
+
+#workout-plans-card-container{
+  width: 85%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.workout-plans-card{
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+}
+.workout-plans-image{
+  width: 565px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.plans-card-duration{
+  color: green;
+  font-size: 20px;
+}
+.plans-card-text{
+  color: #c4cfde;
+  font-size: 26px;
+
+}
+.about-me{
+  width: 85%;
+  margin: 10px auto;
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#about-me-image{
+  width: 500px;
+  object-fit: cover;
+}
+#media-play-icon{
+  width: 150px;
+  object-fit: cover;
+  opacity: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.right-container{
+  background: #232323;
+  padding: 10px;
+  position: relative; 
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+}
+#media-play-icon{
+  position: absolute; 
+  top: 210px;
+  left: 180px; 
+}
+#about-me-text{
+  color: green;
+  font-size: 20px;
+}
+#about-me-story{
+  color: white;
+  font-size: 70px;
+}
+.left-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 48%;
+
+}
+#about-me-desc  {
+  color: #c4cfde;
+  width: 80%;
+  font-size: 18px;
+
+}
+.testimonial{
+  width:85%;
+  margin: 70px auto;
+}
+.testimonial-sub-heading{
+  color: green;
+  font-size: 20px;
+  text-align: center;
+}
+.testimonial-heading{
+  color: #c4cfde;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 30px;
+}
+.testimonial-card-container{
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row; 
+  flex-wrap: wrap;  
+  justify-content: space-around; 
+  gap: 20px;
+}
+.testimonial-card{
+  width: fit-content;
+  max-width: 32%;
+  height: auto;
+  min-height: 24rem;
+  padding: 40px 60px;
+  background: #232323;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+
+}
+.testimonial-desc{
+  color: #c4cfde;
+  font-size: 17px;
+  margin-top: 20px;
+  line-height: 150%;
+
+}
+.testimonial-image{
+  width: 50px;
+  fit: cover;
+  border-radius: 50%;
+}
+.testimonial-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.testimonial-profile-name{
+  color: green;
+}
+.arrow-image{
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  border: none;
+  /* filter: invert(1); */
+  background: white ;
+  rounded: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+#challenge{
+  width: 80%;
+  margin: 100px auto;
+  background: #232323;
+  padding: 3rem;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+
+}
+#challenge-image-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+#challenge-image{
+  width: 95%;
+  height: 70%;
+  object-fit: cover;
+
+}
+.challenge-btn{
+  border: none;
+  background: #232323;
+  border-radius: 50%;
+
+}
+
+#challenge-title{
+  color: #c4cfde;
+  margin-top: 30px;
+  font-size: 30px;
+}
+#challenge-desc{
+  color: #c4cfde;
+  margin-top: 30px;
+  font-size: 20px;
+  opacity: 50%;
+}
+#workout-plan{
+  width: 85%;
+  margin: 29px auto;
+  display: flex;
+  background: #232323;
+  padding: 4rem;
+  /* flex-wrap: wrap; */
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  border-radius: 10px;
+}
+#workout-image{
+  width: 100%;
+}
+#workout-plan-text-container{
+  color: #c4cfde;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+#workout-plan-text-container span{
+  opacity: 50%;
+  font-size: 1.2rem;
+  width: 90%;
+}
+#workout-plan-text-container h5{
+  font-size: 2rem;
+}
+#workout-plan-text-container p{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#workout-plan-text-container ul li{
+  list-style: none;
+  line-height: 200%; 
+}
+#mobile-application{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 100px auto;
+  justify-content: space-between;
+}
+#mobile-application-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #c4cfde;
+  flex-wrap: wrap;
+
+}
+#mobile-application-text-container button{
+  max-width: 150px;
+  background: green;
+  color: black;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#mobile-application-text-container p{
+  width: 70%;
+  font-size: 20px;
+}
+#mobile-application-text-container span{
+  font-size: 18px;
+  color: green;
+
+}
+#mobile-application-text-container h5{
+  font-size: 68px;
+  width: 80%;
+
+}
+#mobile-application-image-container{
+  display: flex;
+  justify-content: end;
+  background: #232323;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+
+}
+#mobile-application-image-container img{
+  width: 470px;
+  object-fit: cover;  
+  border-radius: 10px;
+
+}
+#program-section{
+  /* width: 100vw; */
+  background-image: url("./Assets/program-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  /* opacity: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#program-section h4{
+  color: white;
+  font-size: 70px;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+#program-section p{
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+#program-section button{
+  max-width: 350px;
+  background: green;
+  color: black;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#article{
+  width: 85%;
+  margin: 80px auto; 
+}
+#article-title{
+  font-size: 18px;
+  color: green;
+  text-align: center;
+
+}
+#article h4{
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+#article-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.article-card{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  padding: 4rem 3rem ;
+  background: #232323;
+  border-radius: 10px;
+  gap: 1rem;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+
+}
+.article-card img{
+  border-radius: 10px;
+}
+.article-card {
+  font-size: 1.4rem;
+  color: #c4cfde; !important
+  font-weight: bold;
+}
+.article-card p{
+  color: #c4cfde;
+  font-size: 16px;
+}
+
+#instagram-section{
+  width: 85%;
+  margin: 80px auto;   
+}
+
+#instagram-title{
+  font-size: 18px;
+  color: green;
+  text-align: center;
+
+}
+#instagram-section h4{
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+#instagram-image-container{
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#instagram-image-container img{
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  width: 100%;
+  object-fit: cover;
+}
+#instagram-1{
+  height: 500px;
+}
+#instagram-2{
+  height: 450px;
+}
+#instagram-3{
+  height: 400px;
+}
+#pricing-section{
+  display: flex;
+  width: 85%;
+  margin: 50px auto;
+  color: #c4cfde;
+  gap: 20px;
+
+}
+.pricing-plan{
+  background: #232323;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  padding: 50px;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  width: 33%;
+  max-width: 33%;
+  flex-wrap: wrap;
+  border-radius: 10px;
+
+}
+#pricing-text{
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing-plan ul li{
+  line-height: 250%;
+}
+.pricing-plan-btn{
+  background: #232323;
+  box-shadow: 0px 0px 20px rgba(1, 1, 1, 0.9 );
+  color: red;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+#pricing-text span{
+  color: green;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#pricing-text h4{
+  color: white;
+  font-size: 70px;
+}
+#pricing-text p{
+  line-height: 200%;
+  font-size: 18px;
+}
+#footer{
+  width: 100%;
+  margin-top: 50px;
+  background: #232323;
+}
+.footer-question{
+  color: #c4cfde;
+  font-size: 16px;
+}
+#copyright{
+  color: #c4cfde;
+  font-size: 16px;
+}
