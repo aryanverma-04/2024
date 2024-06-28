@@ -9,10 +9,10 @@ const PORT = process.env.PORT || 4000;
 app.use(express.json());
 
 //import routes for TODO API
-const todoRoutes = require("./routes/todos");
+const blog = require("./routes/blog");
 
 //mount the todo API routes
-app.use("/api/v1", todoRoutes);
+app.use("/api/v1", blog);
 
 //start server
 app.listen(PORT, () => {
